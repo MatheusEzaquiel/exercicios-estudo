@@ -1,0 +1,36 @@
+body{
+ margin: 0;
+ padding:0;
+}
+main{
+  background: #ebad78;
+    display: flex;
+    flex-direction: row;  /*column; O valor row já vem por padrão no css*/
+    justify-content: center; /*space-around; | space-between; | center; | flex-start; (padrão)  | flex-end;*/
+    align-items: center; /*baseline;(alinha os itens pela base do texto) | stretch; (com esta propriedade, caso o elemento não tenha um altura definida, ele irá preencher toda a altura da div pai)/*center; flex-end; | flex-start; flex-end    alinha os itens na vertical*/
+    flex-wrap: wrap; /*wrap (quebra linha para baixo) | wrap-reverse; |nowrap; (padrão)  - É um comando que determina se os itens continuarão em uma mesma linha ou irão ficar em apenas 1 linha obrigatoriamente */
+    /*flex-flow: row wrap - configura a propriedade flex-direction e flex-wrap*/
+    align-content: center; /*space-around; | space-between; | center; | flex-end; | flex-start; | É usado em conjunto com o wrap, ele é usado para alinhar elementos em mais de uma linha*/
+    gap: 5px 10px; /* gap é a propriedade (que junta as propriedades row-gap e column-gap) coloca um espaçamento de N pixels entre os elementos (tanto na vertical, quanto na horizontal ex.--> row-gap: 10px (horizontal) 20px (vertical)).*/
+    width: 550px;
+    height: 500px;
+    padding: 16px;
+}
+.item{
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    text-align: center;
+    color: #fff;
+    border-radius: 30px;
+}
+.a{
+    background: #fc0345;
+}
+.b{
+    background: #4503fc;
+}
+.c{
+    background: #03fce7
+    ;
+}

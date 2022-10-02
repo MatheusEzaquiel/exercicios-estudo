@@ -1,0 +1,61 @@
+body{
+  font: normal 12px arial;
+}
+.box-center{
+  margin-right: auto;
+  margin-left: auto;
+}
+section.principal{
+  /*background: gray;*/
+  width: 1000px;
+  height: 450px;
+  margin-bottom: 0px;
+  position: relative; /*container pai - passo 1*/
+}
+section.principal h1{
+  font: normal 25pt arial;
+  text-align: center;
+}
+.container{
+  background: rgba(164, 50, 168, 1);
+  padding: 30px;
+  width: 500px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 15px 25px;
+  position: absolute; /*container filho de section - passo 2*/
+  top: 50%; /* ficará em 50% de altura do container pai - passo 3*/
+  left: 50%; /* ficará 50% de largura do lado esquerdo do container pai - passo 4*/
+  transform: translate(-50%,-50%); /*se refere à altura e largura do próprio elemento*/
+}
+.item{
+  width: 200px;
+  height: 60px;
+  background: rgba(137, 35, 140, 0.5);
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex; /*alinhamento na vertical - passo A*/
+  align-items: center; /*alinhamento na vertical - passo B*/
+}
+.item h3{
+  font: normal 25px arial;
+  text-align: center;
+  color: #fff;
+}
+.item:hover{
+  background: rgba(166, 17, 148,0.5);
+  color: #bd20a9;
+  border: solid 3px #a61194;
+  margin: 7px;
+}
+img.personagem{
+  width: 200px;
+  margin-left: 0px;
+  margin-left: 600px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt_br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Uma das maneiras de alinhar elementos</title>
+    <style>
+    body{
+      font: normal 14pt arial;
+      color: #fff;
+    }
+      div.container3 {
+        width: 250px;
+        background: blue;
+         height: 10em;
+         position: relative                 /*container pai - passo 1*/
+      }
+      div.container3 p {
+         margin: 0;
+         position: absolute;               /*container filho de section - passo 2*/
+         top: 50%;                         /* ficará em 50% de altura do container pai - passo 3*/
+         left: 50%;                        /* ficará 50% de largura do lado esquerdo do container pai - passo 4*/
+         transform: translate(-50%,-50%); /* desloca o elemento dentro do container de um valor igual a metade da sua (do elemento) altura. se refere à altura do próprio elemento.) 5*/
+      }
+      /*OUTRA FORMA DE ALINHA O TEXTO/ITEM NA HORIZONTAL*/
+      div.caixa-titulo{
+        background: red;
+        width: 500px;
+        height: 400px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class=container3>
+      <p>Parágrafo…
+    </div>
+
+    <div class="caixa-titulo">
+      <h2 class="titulo">Texto teste</h2>
+    </div>
+  </body>
+</html>
